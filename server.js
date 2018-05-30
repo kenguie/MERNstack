@@ -23,7 +23,12 @@ mongoose
   .catch(err => console.log(err));
 
 // app.get('/', (req, res) => res.send('Hi!'));
-app.get('/', (req, res) => res.json({ msg: 'Users Works'}));  // return JSON data
+app.get('/', (req, res) => res.json({  // return JSON data
+  id: '1',
+  name: 'Ken Guie',
+  email: 'kenguie@gmail.com',
+  currentPosition: 'Front End Developer'
+}));
 
 // Passport Config 
 require('./config/passport')(passport);
